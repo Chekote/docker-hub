@@ -6,7 +6,7 @@ FROM chekote/alpine:latest
 
 ENV HUB_VERSION=2.14.2
 
-RUN set -eu; \
+RUN set -euxo pipefail; \
     apk update; \
     #
     # Installing dependencies for getting and running the hub installation
