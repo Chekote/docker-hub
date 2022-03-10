@@ -1,5 +1,7 @@
 # chekote/hub:latest
 # chekote/hub:$HUB_VERSION
+# us.gcr.io/chekote-56995/hub:latest
+# us.gcr.io/chekote-56995/hub:$HUB_VERSION
 FROM chekote/alpine:3.14.2
 
 ENV HUB_VERSION=2.14.2
