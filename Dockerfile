@@ -17,7 +17,7 @@ RUN set -euxo pipefail; \
     #
     # Installing the stuff that hub needs to run
     apk add --no-cache openssh libc6-compat git; \
-    wget -O hub.tgz --progress=dot:mega "https://github.com/github/hub/releases/download/v$HUB_VERSION/hub-linux-${ARCH}-$HUB_VERSION.tgz"; \
+    wget -O hub.tgz --progress=dot:mega "https://github.com/github/hub/releases/download/v$HUB_VERSION/hub-linux-$ARCH-$HUB_VERSION.tgz"; \
     mkdir /hub; \
     tar -xvf hub.tgz -C /hub --strip-components 1;\
     #
