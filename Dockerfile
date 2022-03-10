@@ -27,4 +27,7 @@ RUN set -euxo pipefail; \
     # Cleaning up, removing non necessary files for hub
     rm -r /hub; \
     rm hub.tgz; \
-    apk del install-deps
+    apk del install-deps; \
+    #
+    # Make sure Hub is working
+    hub --version;
